@@ -28,7 +28,7 @@ function preload() {
   grass2 = loadImage("grass2.png");
 }
 function setup() {
-  cnv = createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(window.innerWidth, window.innerHeight);
   cnv.elt.addEventListener('click', myTouchStarted)
 
   currentTrashImg = trashImgList[int(random(trashImgList.length))];
