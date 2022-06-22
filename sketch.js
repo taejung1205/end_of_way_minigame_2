@@ -29,7 +29,7 @@ function preload() {
 }
 function setup() {
   console.log(window.innerWidth, window.innerHeight)
-  cnv = createCanvas(window.innerWidth, window.innerHeight);
+  cnv = createCanvas(window.innerWidth, 640);
   cnv.elt.addEventListener('click', myTouchStarted)
 
   currentTrashImg = trashImgList[int(random(trashImgList.length))];
