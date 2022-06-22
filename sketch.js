@@ -342,12 +342,12 @@ function checklistDisplay() {
 
   strokeWeight(5);
   stroke(255, 0, 0, 200);
-  line(20, 150, 230, 150);
+  line(20, 155, 230, 155);
   //line(20, 200, 170, 200);
 
   strokeWeight(5);
   stroke(255, 0, 0, 200);
-  line(20, 200, 20 + redlineStart, 200);
+  line(20, 205, 20 + redlineStart, 205);
 
   if (frameCount % 5 == 0) {
     if (redlineStart <= 160) {
