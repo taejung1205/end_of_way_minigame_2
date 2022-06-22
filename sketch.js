@@ -128,7 +128,7 @@ function myTouchStarted() {
           trashY < mouseY &&
           mouseY < trashY + trashSize
         ) {
-          trashX = int(random(50, windowWidth - 50));
+          trashX = int(random(50, width - 50));
           trashY = int(random(50, height - 100));
           trashSize = int(random(30, 100));
           let i = int(random(trashImgList.length));
@@ -188,7 +188,7 @@ function myTouchStarted() {
 //           trashY < mouseY &&
 //           mouseY < trashY + trashSize
 //         ) {
-//           trashX = int(random(50, windowWidth - 50));
+//           trashX = int(random(50, width - 50));
 //           trashY = int(random(50, height - 100));
 //           trashSize = int(random(30, 100));
 //           let i = int(random(trashImgList.length));
@@ -270,9 +270,9 @@ function trashCount() {
   textSize(15);
   textStyle(NORMAL);
   fill(0);
-  text("남은 쓰레기", windowWidth - 50, height - 50);
+  text("남은 쓰레기", width - 50, height - 50);
   textSize(30);
-  text(trashC, windowWidth - 45, height - 20);
+  text(trashC, width - 45, height - 20);
 }
 
 function introDisplay() {
@@ -282,15 +282,15 @@ function introDisplay() {
   textStyle(NORMAL);
   textSize(25);
   fill(255);
-  text("얼마 전...", windowWidth / 2, height / 2);
+  text("얼마 전...", width / 2, height / 2);
 
   textSize(15);
   fill(150);
-  text("클릭하여 다음 단계로...", windowWidth / 2, (height / 4) * 3);
+  text("클릭하여 다음 단계로...", width / 2, (height / 4) * 3);
 
   textSize(15);
   fill(150);
-  // text("현재 미니게임이 iPhone에서 작동하지 않습니다.\n다른 기기로 테스트 부탁드립니다.", windowWidth / 2, (height / 4) * 3 + 50);
+  // text("현재 미니게임이 iPhone에서 작동하지 않습니다.\n다른 기기로 테스트 부탁드립니다.", width / 2, (height / 4) * 3 + 50);
 }
 
 function backgroundDisplay() {
@@ -325,7 +325,7 @@ function checklistDisplay() {
   textSize(50);
   noStroke();
   fill(102, 51, 0);
-  text("체크리스트", windowWidth / 2, 50);
+  text("체크리스트", width / 2, 50);
 
   textAlign(LEFT, CENTER);
   textSize(30);
@@ -356,32 +356,32 @@ function checklistDisplay() {
     textSize(30);
     fill(0);
     noStroke();
-    text("비밀번호", windowWidth / 2, (height * 2) / 3);
+    text("비밀번호", width / 2, (height * 2) / 3);
 
     for (let i = 0; i < 4; i++) {
       fill(255, 200);
       noStroke();
       rect(
-        (windowWidth * 1) / 13 + windowWidth * ((3 * i) / 13),
+        (width * 1) / 13 + width * ((3 * i) / 13),
         (height * 2) / 3 + 60,
-        (windowWidth * 2) / 15,
+        (width * 2) / 15,
         80
       );
     }
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(25);
-    text("3", (windowWidth * 2) / 13, (height * 2) / 3 + 100);
+    text("3", (width * 2) / 13, (height * 2) / 3 + 100);
     textSize(40);
-    text("6", (windowWidth * 5) / 13, (height * 2) / 3 + 100);
-    text("1", (windowWidth * 8) / 13, (height * 2) / 3 + 100);
-    text("8", (windowWidth * 11) / 13, (height * 2) / 3 + 100);
+    text("6", (width * 5) / 13, (height * 2) / 3 + 100);
+    text("1", (width * 8) / 13, (height * 2) / 3 + 100);
+    text("8", (width * 11) / 13, (height * 2) / 3 + 100);
 
     noFill();
     strokeWeight(1);
     stroke(30, 150);
     rectMode(CENTER);
-    //rect(windowWidth/2,height-10,100,15);
+    //rect(width/2,height-10,100,15);
     textSize(20);
     textStyle(NORMAL);
     fill(30, 150);
