@@ -159,66 +159,6 @@ function myTouchStarted() {
   }
 }
 
-
-
-// function touchStarted() {
-//   if (touchDelay == 0) {
-//     touchDelay = 10;
-//     switch (stage) {
-//       case 0:
-//         stage = 1;
-//         break;
-//       case 1:
-//         stage = 2;
-//         break;
-//       case 2:
-//         stage = 3;
-//         break;
-//       case 3:
-//         //opening
-//         if (
-//           width / 2 - 65 < mouseX &&
-//           mouseX < width / 2 + 65 &&
-//           height / 2 + 25 < mouseY &&
-//           mouseY < height / 2 + 75
-//         ) {
-//           stage = 4;
-//         }
-//         break;
-//       case 4:
-//         //main
-//         if (
-//           trashX < mouseX &&
-//           mouseX < trashX + trashSize &&
-//           trashY < mouseY &&
-//           mouseY < trashY + trashSize
-//         ) {
-//           trashX = int(random(50, windowWidth - 50));
-//           trashY = int(random(50, height - 100));
-//           trashSize = int(random(30, 100));
-//           let i = int(random(trashImgList.length));
-//           print(i);
-//           currentTrashImg = trashImgList[i];
-//           trashDisplay();
-
-//           if (trashC == 1) {
-//             stage = 5;
-//           } else {
-//             trashC -= 1;
-//           }
-//         }
-//         break;
-//       case 5:
-//         stage = 6;
-//         break;
-//       case 6:
-//         break;
-
-//       default:
-//     }
-//   }
-// }
-
 function keyPressed() {
   switch (stage) {
     case 0:
@@ -295,7 +235,6 @@ function introDisplay() {
 
   textSize(15);
   fill(150);
-  // text("현재 미니게임이 iPhone에서 작동하지 않습니다.\n다른 기기로 테스트 부탁드립니다.", windowWidth / 2, (height / 4) * 3 + 50);
 }
 
 function backgroundDisplay() {
@@ -388,7 +327,6 @@ function checklistDisplay() {
     strokeWeight(1);
     stroke(30, 150);
     rectMode(CENTER);
-    //rect(windowWidth/2,height-10,100,15);
     textSize(20);
     textStyle(NORMAL);
     fill(30, 150);
