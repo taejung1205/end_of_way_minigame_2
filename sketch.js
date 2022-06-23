@@ -52,7 +52,7 @@ function draw() {
       break;
     case 2:
       backgroundDisplay();
-      introTextbox("길거리 환경미화 봉사활동? 힘들것같은데.. 그래도 지금 찬밥 더운밥 가릴때냐ㅠㅠ");
+      introTextbox("길거리 환경미화 봉사활동? 힘들것같은데..\n그래도 지금 찬밥 더운밥 가릴때냐ㅠㅠ");
       break;
     case 3:
       //opening
